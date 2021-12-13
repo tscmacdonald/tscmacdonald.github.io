@@ -73,11 +73,19 @@
       {% elsif entry.type == "inproceedings" %}
         <em>In {{entry.booktitle}}</em>
       {% endif %}
-      {% if entry.month %}
+      <!--
+	  {% if entry.month %}
         {{entry.month | capitalize}}
       {% endif %}
+      -->
       {% if entry.year %}
-        {{entry.year}}
+        <b>{{entry.year}}</b>
+      {% endif %}
+      {% if entry.volume %}
+        <i>{{entry.volume}}</i>
+      {% endif %}
+      {% if entry.pages %}
+        {{entry.pages}}
       {% endif %}
       </div>
     {% endif %}
