@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Molecular swimmers
-description: Active propulsion of molecules in solution
+description: Mechanical propulsion of molecules in solution
 img: assets/img/molecularmotion/scalloptheorem.png
 importance: 1
 category: work
@@ -48,13 +48,13 @@ $$
 dk > \sqrt{6D}
 $$
 
-For a small-ish molecule in organic solution, let's say $$D = 10^{-10} \mathrm{m^2 s^{-1}}$$. It seems reasonable that the 'step size' for an isomerising molecule must be smaller than its length, so let's charitably assume that our molecules are perfectly efficient swimmers wiht a length of 1 nm, giving us $$d = 10^{-9} \mathrm{m}$$. The minimum isomerisation rate to drive measurable swimming motion must then be:
+For a small-ish molecule in organic solution, let's say $$D = 10^{-10}~\mathrm{m^2 s^{-1}}$$. It seems reasonable that the 'step size' for an isomerising molecule must be smaller than its length, so let's charitably assume that our molecules are perfectly efficient swimmers wiht a length of 1 nm, giving us $$d = 10^{-9}~\mathrm{m}$$. The minimum isomerisation rate to drive measurable swimming motion must then be:
 
 $$
-k > \frac{\sqrt{6\times10^{-10}}}{10^{-9}} \mathrm{s^{-1}}\\
+k > \frac{\sqrt{6\times10^{-10}}}{10^{-9}}~\mathrm{s^{-1}}\\
 $$
 $$
-k > 6\times 10^4 \mathrm{s^{-1}}
+k > 6\times 10^4~\mathrm{s^{-1}}
 $$
 
 That's 60 kHz of photoisomerisation _per molecule_! Perhaps not impossible in what would by that point be a lossy optical cavity, but I've got no idea how you'd be measure the diffusion of the molecules against such a bright background and in the presence of so much heating. At the very least, it's 4-5 orders of magnitude more light than we can feasibly get into a diffusion NMR setup. 
