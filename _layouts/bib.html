@@ -16,7 +16,7 @@
 
     <div style="clear: both;">
       <div style="">
-        <img class="col bibone first" src="{{ site.data.teasers[entry.shorttitle].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
+        <img class="col bibone first" src="{{ site.data[entry.shorttitle].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
       </div>
     </div>
     {% if entry.type == "thesis" %}
