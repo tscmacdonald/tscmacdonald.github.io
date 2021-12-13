@@ -49,7 +49,7 @@ The next steps are to stitch the different bursts together into a composite (“
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/4.png class: "img-fluid rounded z-depth-1"%}
+        {% responsive_image path: assets/img/albanianinsar/4.png class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
@@ -60,7 +60,7 @@ Unwrapping attempts to convert periodic phase measurements into absolute displac
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/5.png class: "img-fluid rounded z-depth-1"%}
+        {% responsive_image path: assets/img/albanianinsar/5.png class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
@@ -73,7 +73,7 @@ Once the unwrapping has finished, the unwrapped data can be imported into SNAP (
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/6.png class: "img-fluid rounded z-depth-1"%}
+        {% responsive_image path: assets/img/albanianinsar/6.png class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
@@ -84,7 +84,7 @@ Finally, we can run a range-doppler correction on the displacement map (_Radar >
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/7.png class: "img-fluid rounded z-depth-1"%}
+        {% responsive_image path: assets/img/albanianinsar/7.png class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
@@ -95,7 +95,7 @@ I don’t have much other information regarding this earthquake to compare this 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/8.png class: "img-fluid rounded z-depth-1"%}
+        {% responsive_image path: assets/img/albanianinsar/8.png class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
@@ -106,11 +106,11 @@ It seems that this guess is actually pretty close to the truth. An article publi
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/9.png class: "img-fluid rounded z-depth-1"%}
+        {% responsive_image path: assets/img/albanianinsar/9.png class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
-    This work from some people with actual expertise in the area ([_Remote Sensing_ __2020__, _12_, 846](https://doi.org/10.3390/rs12050846)) seems close to my uninformed speculation of a northeast to southwest fault.
+    This work from some people with actual expertise in the area ([Remote Sensing 2020, 12, 846](https://doi.org/10.3390/rs12050846)) seems close to my uninformed speculation of a northeast to southwest fault.
 </div>
 
 For anyone interested, here’s the [.kmz](https://drive.google.com/file/d/1_TBzUFNNS-o2Nrai4obZTgf2uTMb-rzf/view?usp=sharing) of the displacement data.
