@@ -42,6 +42,10 @@
             </a>
           </li>
           {% endif %}
+		  <!-- CV -->
+		  <a class="page-link" href="{{ '/assets/documents/macdonald_CV.pdf' | prepend: site.baseurl | prepend: site.url }}">CV</a>
+		  
+		  
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: "title" %}
           {% for p in sorted_pages %}
