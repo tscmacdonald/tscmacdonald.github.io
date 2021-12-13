@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title:  # the website title (if blank, full name will be used instead)
+title: Thomas MacDonald # the website title (if blank, full name will be used instead)
 first_name: Thomas
 middle_name: S. C.
 last_name: MacDonald
