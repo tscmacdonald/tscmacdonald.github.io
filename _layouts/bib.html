@@ -10,15 +10,14 @@
     <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
     {% endif %}
+  {%if entry.shorttitle %}
+    <img class="col bibone first" src="{{ site.data[entry.shorttitle].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
   </div>
 
   <div id="{{entry.key}}" class="col-sm-8">
 
-    <div style="clear: both;">
-      <div style="">
-        <img class="col bibone first" src="{{ site.data[entry.shorttitle].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
-      </div>
-    </div>
+    
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
