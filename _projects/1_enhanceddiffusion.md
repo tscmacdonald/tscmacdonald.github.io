@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 1
+title: Enhanced Diffusion
 description: Enhanced diffusion of active catalysts
 img: assets/img/12.jpg
 importance: 1
