@@ -5,11 +5,13 @@
   <div class="col-sm-3 abbr">
   {% if entry.abbr %}
     <img class="col bibone first" src="{{ site.data.tocs[entry.abbr].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
-    {% if site.data.venues[entry.abbr] %}
+    <!--
+	{% if site.data.venues[entry.abbr] %}
     <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
     {% else %}
     <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
+    -->
     {% endif %}
   </div>
 
