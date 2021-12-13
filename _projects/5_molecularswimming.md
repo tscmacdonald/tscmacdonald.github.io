@@ -53,6 +53,8 @@ For a small-ish molecule in organic solution, let's say $$D = 10^{-10}~\mathrm{m
 $$
 k > \frac{\sqrt{6\times10^{-10}}}{10^{-9}}~\mathrm{s^{-1}}\\
 $$
+
+
 $$
 k > 6\times 10^4~\mathrm{s^{-1}}
 $$

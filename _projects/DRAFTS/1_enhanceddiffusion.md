@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Enhanced Diffusion
-description: Enhanced diffusion of active catalysts
-img: assets/img/12.jpg
+description: Do chemically active catalysts diffuse more quickly than they should do?
+img: assets/img/tocs/Sendiffusion.png
 importance: 1
 category: work
 ---
 
-A discussion of enhanced diffusion.
+The central theme of my PhD was to look into ways to control motion in 
