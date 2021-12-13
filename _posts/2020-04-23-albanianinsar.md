@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Displacement mapping the 2019 Albanian earthquake with Sentinel 1 InSAR
+title: Displacement mapping the 2019 Albanian earthquake with Sentinel-1 InSAR
 description: A short trip through some amateur SAR interferometry
 date: 2020-04-23
 tags: remote-sensing
