@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: #<a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: Postdoctoral researcher | UNSW, Australia #<a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right

@@ -10,7 +10,7 @@
     <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
     {% endif %}
-  {%if entry.abbr %}
+  {%if entry.shorttitle %}
      <img class="col bibone first" src="{{ site.data.tocs[entry.shorttitle].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
   </div>
