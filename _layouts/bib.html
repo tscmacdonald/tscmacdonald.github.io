@@ -4,15 +4,13 @@
 <div class="row">
   <div class="col-sm-3 abbr">
   {% if entry.abbr %}
+    <img class="col bibone first" src="{{ site.data.tocs[entry.abbr].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
     {% if site.data.venues[entry.abbr] %}
     <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
     {% else %}
     <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
     {% endif %}
-  {%if entry.shorttitle %}
-     <img class="col bibone first" src="{{ site.data.tocs[entry.shorttitle].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
-  {% endif %}
   </div>
 
   <div id="{{entry.key}}" class="col-sm-8">
