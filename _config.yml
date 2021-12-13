@@ -186,7 +186,7 @@ scholar:
   last_name: MacDonald
   first_name: [Thomas, S. C.]
 
-  style: apa
+  style: american-chemical-society
   locale: en
 
   source: /_bibliography/
