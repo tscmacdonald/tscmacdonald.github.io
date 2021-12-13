@@ -2,6 +2,9 @@
 layout: page
 permalink: /presentations/
 title: Presentations
+nav: true
+display_categories: [work]
+horizontal: false
 description: Conference presentations, with links to posters or slides where available.
 ---
 
@@ -15,7 +18,6 @@ description: Conference presentations, with links to posters or slides where ava
 
 ## 2019
 * RACI Inorganic Conference (Wollongong). Poster: [_Enhanced diffusion of active catalysts_](/assets/documents/posters/RaciInorg19.pdf).
-
 
 ## 2017
 * RACI Centenary Congress (Melbourse). Poster on DASA photoswitches.
