@@ -33,13 +33,13 @@ What might a molecular non-reciprocal swimmer look like? It would necessarily be
 Cool idea, right? Unfortunately, I quickly realised it didn't make much sense. Let's assume that each isomerisation drives the molecule forward by distance $$d$$, and $$k$$ isomerisation events occur per unit time $$t$$. The average displacement per unit time $$\langle x \rangle$$ will then be given by
 
 $$
-\langle x \rangle = dkt
+\langle x_{swim} \rangle = dkt
 $$  
 
 How does this compare to diffusion? Diffusive transport follows
 
 $$
-\langle x^2 \rangle = 6Dt
+\langle x_{diff}^2 \rangle = 6Dt
 $$
 
 and 'swimming' will thus be comparable to or greater than diffusion for 
@@ -56,10 +56,10 @@ $$
 
 
 $$
-k > 6\times 10^4~\mathrm{s^{-1}}
+k > \sqrt{6}\times 10^4~\mathrm{s^{-1}}
 $$
 
-That's 60 kHz of photoisomerisation _per molecule_! Perhaps not impossible in what would by that point be a lossy optical cavity, but I've got no idea how you'd be measure the diffusion of the molecules against such a bright background and in the presence of so much heating. At the very least, it's 4-5 orders of magnitude more light than we can feasibly get into a diffusion NMR setup. 
+That's tens of kHz of photoisomerisation _per molecule_! Perhaps not impossible in what would by that point be a lossy optical cavity, but I've got no idea how you'd be measure the diffusion of the molecules against such a bright background and in the presence of so much heating. At the very least, it's 4-5 orders of magnitude more light than we can feasibly get into a diffusion NMR setup. 
 
 I don't think that this sort of mechanical swimming makes much sense for molecules. Since $$D \propto 1/r^2$$ and therefore $$\langle x_{diff} \rangle \propto 1/r$$, while the velocity of mechanical swimming at a given frequency follows $$\langle x_{swim} \rangle \propto r$$, the overall efficiency of swimming over diffusion is proportional to $$r^2$$ and molecules are unfortunately just too small to make much headway.
 
