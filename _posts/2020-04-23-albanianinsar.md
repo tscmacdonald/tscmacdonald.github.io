@@ -110,7 +110,7 @@ It seems that this guess is actually pretty close to the truth. An article publi
     </div>
 </div>
 <div class="caption">
-    This work from some people with actual expertise in the area ([Remote Sensing 2020, 12, 846](https://doi.org/10.3390/rs12050846)) seems close to my uninformed speculation of a northeast to southwest fault.
+    This work from some the actual experts in the area seems reasonably close to my tentative guess of a northeast to southwest fault.
 </div>
 
 For anyone interested, here’s the [.kmz](https://drive.google.com/file/d/1_TBzUFNNS-o2Nrai4obZTgf2uTMb-rzf/view?usp=sharing) of the displacement data.
