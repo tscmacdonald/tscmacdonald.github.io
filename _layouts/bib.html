@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-sm-3">
   {% if entry.abbr %}
-    <img-responsive class="col bibone first" src="{{ site.data.tocs[entry.abbr].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}"/>
+    <img class="img-fluid" src="{{ site.data.tocs[entry.abbr].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}"/>
     <!--
 	{% if site.data.venues[entry.abbr] %}
     <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
