@@ -2,7 +2,7 @@
 layout: page
 title: English Village Carols
 description: Re-setting a book of sheet music for traditional english village carols
-img: assets/img/sheffieldcarols/jacobswell.svg
+img: assets/img/sheffieldcarols/jacobswell.png
 importance: 5
 category: hobbies
 ---
