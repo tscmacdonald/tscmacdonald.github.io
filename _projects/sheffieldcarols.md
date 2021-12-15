@@ -19,4 +19,4 @@ I became interested in this music in 2016 and was fortunate enough to be in Shef
 
 I decided that the best option was to use the existing music arrangements but to re-set the sheet music in a more condensed form. To do this I photocopied the music books, OCRed the image files with [SharpEye](http://visiv.co.uk/about.htm), cleaned up the imperfect OCR MuseXML files manually where needed, and re-set the music for each song in a more condensed form with [Lilypond](https://lilypond.org/). Finally, I used LaTeX to build all the separate music files into a single songbook document with indexing and hyperlinks, which we've used to sing from since.
 
-The songbook project is documented and accessible on Gitlab [here](https://gitlab.com/tscmacdonald/sydney-village-carols/). The PDF of the music is [here](assets/pdf/Sydney_Village_Carols.pdf).
+The songbook project is documented and accessible on Gitlab [here](https://gitlab.com/tscmacdonald/sydney-village-carols/). The PDF of the music is [here](Sydney_Village_Carols.pdf).
