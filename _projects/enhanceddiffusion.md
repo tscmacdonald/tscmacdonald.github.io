@@ -7,8 +7,31 @@ importance: 1
 category: work
 ---
 
-The central theme of my PhD was to look into ways to control motion in 
+The central focus of my PhD was controlling the translational motion of molecules in solution. After deciding that mechanically articulated [molecular swimmers](projects/molecularswimming) were unfeasible to demonstrate experimentally, my interest turned to intriguing claims of "enhanced diffusion" of chemically active enzymes and small molecular catalysts. I decided to start by looking into the enhanced diffusion of small-molecule catalysts and to study this by diffusion NMR spectroscopy, partially motivated by an interest in collaborating with diffusion specialist [Bill Price](https://www.westernsydney.edu.au/staff_profiles/uws_profiles/professor_bill_price) at Western Sydney University. The topic eventually became a major focus of my PhD, leading to several nice papers and contributions to (one side of) an ongoing scientific controvery.
+
+## Enhanced diffusion of active catalysts
+
+My interest in this topic started with [this paper](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201509237) by K. K. Dey and co-workers out of Ayusman Sen's research group in Penn State. The authors used diffusion NMR spectroscopy to study the diffusion rates of chemical species during a ruthenium-catalysed ring closing metathesis reaction and reported a transient increase in diffusion while the reaction was progressing. This work came from a larger programme of research into the enhanced diffusion of active enzymes in the presence of chemical substrates, generally studied by fluorescence correlation spectroscopy (FCS).   
+
+
+## Developing methods to follow diffusion coefficients during chemical reactions
+
+
+
+## Diffusion NMR and convection
+
 
 [Derek Lowe wrote a blog post](https://www.science.org/content/blog-post/enhanced-diffusion-real-illusion) on this project and its outcomes, ticking off an item from my chemistry bucket list - I've been reading his blog since I was maybe 13 or 14 years old, so having my work featured on it was quite a moment.
 
-[Yifei Zhang and Henry Hess](https://www.nature.com/articles/s41570-021-00281-6) wrote a good review on this contentious topic in May 2021.
+
+## Diffusion NMR and changing signal intensities
+
+ 
+## Enhanced diffusion: real or illusion?
+
+What to make of all this? I think the most important conclusion is that while diffusion NMR is a powerful spectroscopic technique, it's also vulnerable to a range of measurement artefacts caused by non-diffusive translational motion (convection, molecular chemotaxis) and correlations between the gradient sequence and changing signal intensities resulting from changing concentration or changing nuclear spin relaxation rates. Diffusion NMR remains far from a 'black box' experimental technique, and NMR measurements of diffusion still require critical analysis by specialists in diffusion NMR spectroscopy. Some of these artefacts can be (and should be!) eliminated through improvements in experimental protocals, such as replacing all monotonic gradient sequences with non-correlated shuffled sequences.
+
+
+For those interested in reading some more scholarly thoughts on enhanced molecular diffusion, [Yifei Zhang and Henry Hess](https://www.nature.com/articles/s41570-021-00281-6) wrote a good critical review on this contentious topic in May 2021.
+
+As for the enhanced diffusion of molecular catalysts, I remain skeptical. I have not encountered a convincing physical model that suggests it should be possible, and experimental reports of enhanced catalyst diffusion have struggled to be replicated or withstand scrutiny. The experimental evidence for enhanced enzyme diffusion seems somewhat better, but the predominantly-FCS diffusion studies have their own potential issues involving the disassociation of enzyme into smaller subunits at low concentrations. There's also a  
