@@ -11,12 +11,13 @@ The central focus of my PhD was controlling the translational motion of molecule
 
 ## Enhanced diffusion of active catalysts
 
-My interest in this topic started with [a paper](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201509237) published by K. K. Dey and co-workers out of Ayusman Sen's research group in Penn State. Previous work from these authors had focused on the enhanced diffusion of active enzymes in the presence of chemical substrates, generally studied by fluorescence correlation spectroscopy (FCS). In this case the system was a small inorganic Grubbs catalyst and the reaction was following by diffusion NMR, which showed a transient increase in diffusion while the reaction was progressing. The fact that all chemical species in the solution showed enhanced diffusion during the reaction confused me at the time (if everything's moving faster at the same time, isn't that just bulk heating?), but the active catalyst showed the largest relative increase in diffusion $$\DeltaD/D_0$$ and maybe the 'momentum transfer' from catalyst to solution was incomplete.
+My interest in this topic started with [a paper](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201509237) published by K. K. Dey and co-workers out of Ayusman Sen's research group in Penn State. Previous work from these authors had focused on the enhanced diffusion of active enzymes in the presence of chemical substrates, generally studied by fluorescence correlation spectroscopy (FCS). In this case the system was a small inorganic Grubbs catalyst and the reaction was following by diffusion NMR, which showed a transient increase in diffusion while the reaction was progressing. The fact that all chemical species in the solution showed enhanced diffusion during the reaction confused me at the time (if everything's moving faster at the same time, isn't that just bulk heating?), but the active catalyst showed the largest relative increase in diffusion $$\Delta D/D_0$$ and maybe the 'momentum transfer' from catalyst to solution was incomplete.
 
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/enhanceddiffusion/dynamiccouplingtoc.jpg class: "img-fluid rounded z-depth-1" %}
     </div>
-
+</div>
 ## Developing methods to follow diffusion coefficients during chemical reactions
 
 
