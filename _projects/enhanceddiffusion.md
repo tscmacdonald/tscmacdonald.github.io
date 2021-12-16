@@ -15,7 +15,7 @@ The central focus of my PhD was controlling the translational motion of molecule
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: projects/enhanceddiffusion/windowprocessing.pdf class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: projects/enhanceddiffusion/windowprocessing.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
@@ -25,7 +25,7 @@ The central focus of my PhD was controlling the translational motion of molecule
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: projects/enhanceddiffusion/gcorrelation.pdf class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: projects/enhanceddiffusion/gcorrelation.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
