@@ -7,21 +7,30 @@ importance: 1
 category: work
 ---
 
-The central focus of my PhD was controlling the translational motion of molecules in solution. After deciding that mechanically articulated [molecular swimmers](projects/molecularswimming) were unfeasible to demonstrate experimentally, my interest turned to intriguing claims of "enhanced diffusion" of chemically active enzymes and small molecular catalysts. I decided to start by looking into the enhanced diffusion of small-molecule catalysts and to study this by diffusion NMR spectroscopy, partially motivated by an interest in collaborating with diffusion specialist [Bill Price](https://www.westernsydney.edu.au/staff_profiles/uws_profiles/professor_bill_price) at Western Sydney University. The topic eventually became a major focus of my PhD, leading to several nice papers and contributions to (one side of) an ongoing scientific controvery.
+The central focus of my PhD was controlling the translational motion of molecules in solution. After deciding that mechanically articulated [molecular swimmers](projects/molecularswimming) were unfeasible to demonstrate experimentally, my interest turned to intriguing claims of "enhanced diffusion" of chemically active enzymes and [small molecular catalysts](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201509237). As a chemist and NMR spectroscopist I was happy to leave the FCS studies of enzymes to others, and so chose to look at the diffusive behaviour of molecular catalysts (partially motivated by a desire to work with diffusion NMR specialist [Bill Price](https://www.westernsydney.edu.au/staff_profiles/uws_profiles/professor_bill_price) at Western Sydney University). The topic eventually became a major focus of my PhD, leading to several nice papers and contributions to (one side of) an ongoing scientific controvery.
 
-## Enhanced diffusion of active catalysts
+## Diffusion NMR of transient processes
 
-My interest in this topic started with [a paper](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201509237) published by K. K. Dey and co-workers out of Ayusman Sen's research group in Penn State. Previous work from these authors had focused on the enhanced diffusion of active enzymes in the presence of chemical substrates, generally studied by fluorescence correlation spectroscopy (FCS). In this case the system was a small inorganic Grubbs catalyst and the reaction was following by diffusion NMR, which showed a transient increase in diffusion while the reaction was progressing. The fact that all chemical species in the solution showed enhanced diffusion during the reaction confused me at the time (if everything's moving faster at the same time, isn't that just bulk heating?), but the active catalyst showed the largest relative increase in diffusion $$\Delta D/D_0$$ and maybe the 'momentum transfer' from catalyst to solution was incomplete.
+1D NMR spectroscopy is routinely used to follow time-dependent systems such as chemical reactions, but time-dependent NMR studies of diffusion are much less common. Standard diffusion NMR experiments assume a static system and take perhaps 20-30 minutes to acquire a single diffusion measurement (16 gradients, 16 scans per gradient, >5 s per scan). Measuring small changes in diffusion during short-lived chemical reactions under these restrictions seemed unlikely, so I set out to develop a better approach. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/enhanceddiffusion/dynamiccouplingtoc.jpg class: "img-fluid rounded z-depth-1" %}
+        {% responsive_image path: projects/enhanceddiffusion/windowprocessing.pdf class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
-## Developing methods to follow diffusion coefficients during chemical reactions
+<div class="caption">
+ Continuous acquisition of diffusion measurements. The standard linear ramp of gradient pulses is replaced by continuous sequence of random gradient pulses, allowing continuous acquisition of I(b) gradient-attenuated signals. These can then be processed by fitting the Stejskal-Tanner equation to a moving subset of datapoints to obtain one averaged diffusion measurement per gradient pulse.
+</div>
 
 
-
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: projects/enhanceddiffusion/gcorrelation.pdf class: "img-fluid rounded z-depth-1" zoomable: true %}
+    </div>
+</div>
+<div class="caption">
+ Diffusion NMR measurements involve acquiring a sequence of spectra using a range of different gradient pulse strengths and fitting signal intensities <i>I</i> against the gradient strengths used <i>b</i>. This measurement takes time, and so is confounded by changes in signal intensity over the experiment timescale due to reasons <i>other</i> than gradient pulse strengths. Here, simulated diffusion coefficients are shown for a simulated reaction in which X becomes Y: even though both species have the same diffusion coefficient of <b>1</b>, correlation between changing concentrations and the monotonically increasing gradient ramp lead to an underestimated D(X) (0.92) and overestimated D(Y) (1.07). Randomising the gradient list removes this correlation and gives more accurate fitted diffusion coefficients.
+</div>
 ## Diffusion NMR and convection
 
 
