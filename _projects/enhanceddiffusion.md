@@ -15,7 +15,7 @@ The central focus of my PhD was controlling the translational motion of molecule
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/enhanceddiffusion/windowprocessing.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/enhanceddiffusion/windowprocessing.png class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
@@ -26,7 +26,7 @@ I realised fairly quickly during this project that random gradient sequences (as
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/enhanceddiffusion/gcorrelation.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/enhanceddiffusion/gcorrelation.png class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
