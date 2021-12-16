@@ -15,17 +15,17 @@ The central focus of my PhD was controlling the translational motion of molecule
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: projects/enhanceddiffusion/windowprocessing.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/enhanceddiffusion/windowprocessing.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
- Continuous acquisition of diffusion measurements. The standard linear ramp of gradient pulses is replaced by continuous sequence of random gradient pulses, allowing continuous acquisition of I(b) gradient-attenuated signals. These can then be processed by fitting the Stejskal-Tanner equation to a moving subset of datapoints to obtain one averaged diffusion measurement per gradient pulse.
+ Continuous acquisition of diffusion measurements. The standard linear ramp of gradient pulses is replaced by continuous sequence of random gradient pulses, allowing continuous acquisition of I(b) gradient-attenuated signals. These can then be processed by curve-fitting a moving subset of datapoints to obtain one averaged diffusion measurement per gradient pulse.
 </div>
 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: projects/enhanceddiffusion/gcorrelation.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/enhanceddiffusion/gcorrelation.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
 </div>
 <div class="caption">
