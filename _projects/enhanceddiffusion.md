@@ -11,7 +11,7 @@ The central focus of my PhD was controlling the translational motion of molecule
 
 ## Diffusion NMR of transient processes
 
-1D NMR spectroscopy is routinely used to follow time-dependent systems such as chemical reactions, but time-dependent NMR studies of diffusion are much less common. Standard diffusion NMR experiments assume a static system and take perhaps 20-30 minutes to acquire a single diffusion measurement (16 gradients, 16 scans per gradient, >5 s per scan). Measuring small changes in diffusion during short-lived chemical reactions under these restrictions seemed unlikely, so I set out to develop a better approach. 
+1D NMR spectroscopy is routinely used to follow time-dependent systems such as chemical reactions, but time-dependent NMR studies of diffusion are much less common. Standard diffusion NMR experiments assume a static system and take perhaps 20-30 minutes to acquire a single diffusion measurement (16 gradients, 16 scans per gradient, >5 s per scan). Measuring small changes in diffusion during short-lived chemical reactions under these restrictions seemed unlikely, so I set out to develop [a better approach](https://dx.doi.org/10.1002/cphc.201900150). We ended up settling on a simple but effective approach of continuously acquiring spectra while drawing from a long sequence of pseudo-random gradient pulses, shown below. This approach let us acquire diffusion measurements as fast as we could could acquire single-point spectra, typically 0.5-3 minutes for 4-16 point phase cycles.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -22,6 +22,7 @@ The central focus of my PhD was controlling the translational motion of molecule
  Continuous acquisition of diffusion measurements. The standard linear ramp of gradient pulses is replaced by continuous sequence of random gradient pulses, allowing continuous acquisition of I(b) gradient-attenuated signals. These can then be processed by curve-fitting a moving subset of datapoints to obtain one averaged diffusion measurement per gradient pulse.
 </div>
 
+I realised fairly quickly during this project that random gradient sequences (as above) aren't only useful for seamless continuous data acquistion. Because diffusion NMR experiments measure signal intensities resulting from a sequence of gradients applied over time, experiments using correlated gradient sequences (e.g. monotonically increasing or decreasing) are vulnerable to artefacts when the measured signal intensity increases or decreases for <i>other</i> reasons during the experiment. A monotonically increasing gradient sequence, for example, will overestimate the measured diffusion coefficient of a chemical species with decreasing concentration during the experiment. Randomising the sequence of gradients used in a diffusion experiment to eliminate any monotonic correlation is a simple, low-effort measure to remove these artefacts. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -31,6 +32,7 @@ The central focus of my PhD was controlling the translational motion of molecule
 <div class="caption">
  Diffusion NMR measurements involve acquiring a sequence of spectra using a range of different gradient pulse strengths and fitting signal intensities <i>I</i> against the gradient strengths used <i>b</i>. This measurement takes time, and so is confounded by changes in signal intensity over the experiment timescale due to reasons <i>other</i> than gradient pulse strengths. Here, simulated diffusion coefficients are shown for a simulated reaction in which X becomes Y: even though both species have the same diffusion coefficient of <b>1</b>, correlation between changing concentrations and the monotonically increasing gradient ramp lead to an underestimated D(X) (0.92) and overestimated D(Y) (1.07). Randomising the gradient list removes this correlation and gives more accurate fitted diffusion coefficients.
 </div>
+
 ## Diffusion NMR and convection
 
 
