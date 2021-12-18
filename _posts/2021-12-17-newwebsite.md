@@ -3,6 +3,7 @@ layout: post
 title: Building a personal website
 description: If you can read this it's probably working
 date: 2021-12-17
+comments: true
 tags: computers, web
 categories: personal
 ---
@@ -10,7 +11,7 @@ categories: personal
 
 I've been thinking for a while that it would be good to start a personal website, both as a collection of thoughts in one place and as a personal portfolio. Finding the right solution took a little while and a few false starts. My first thought was Wordpress, either as a managed or self-hosted solution. I'd tried a few small managed blogs through wordpress.com before but had found it both limited and complicated to customise. Squarespace, another managed website solution, was unsatisying for similar reasons. Self-hosted Wordpress seemed like it could be a better option, but getting a site up and running had always proved more challenging than I'd expected and as a self-taught amateur server admin I was cautious about the security implications of running a publicly-exposed WP site from my home LAN.
 
-Finally, I found some discussion on Twitter about using GitHub Pages for an easily-configurable personal website and was convinced almost immediately. Here are a few advantages of Pages, as I see them:
+Finally, I found some discussion on Twitter about using [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) for an easily-configurable personal website and was convinced almost immediately. Here are a few advantages of Pages, as I see them:
 
 * Free hosting with minimal restrictions for a small (<1 GB) site
 * Static site design built with [jekyll](http://jekyllrb.com/): web pages are lightweight HTML, served quickly and efficiently.
