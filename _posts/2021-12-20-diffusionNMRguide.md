@@ -28,19 +28,19 @@ $$
 where $$k_B$$ is Boltzmann's constant, $$T$$ is the (absolute) temperature, $$\eta$$ is the dynamic viscosity, and $$r$$ is the radius of the diffusing particle. It would be tempting to say that diffusion is only really sensitive to changes of $$r$$, since $$\eta$$ is fixed for a given solvent and temperature changes will be relatively small for a system at 298 K +/- a degree or so. <em>This is not the case</em>, as for most solvents the viscosity $$\eta$$ _also_ varies strongly as a function of temperature. Empirical measurements have found that the dependence of diffusion on temperature is often closer to an exponential Arrhenian relationship:
 
 $$
-D(T) = A\exp{(\frac{-E_a}{k_B T})}
+D(T) = A\exp{(-\frac{E_a}{k_B T})}
 $$
 
 It's not at all clear to me if $$A$$ and $$E_a$$ are physically meaningful quantities. This Arrhenian relationship also tends to break down for more "structured" solvents with stronger intermolecular interactions, such as water and small alcohols. Here are some [reported values]( https://doi.org/10.1039/B005319H) of the "activation energy" for diffusion of common molecular solvents:
 
 | Solvent | $$E_a~\mathrm{/~kJ~mol^{-1}}$$  |
-|----|----|
-|Cyclohexane | 13.7 |
-|Dioxane | 13.9 |
-|Dodecane | 13.7 |
-|DMSO | 14.9 |
-|Tetradecane | 15.6 |
-|Pentanol | 24.1 |
+| ---- | ---- |
+| Cyclohexane | 13.7 |
+| Dioxane | 13.9 |
+| Dodecane | 13.7 |
+| DMSO | 14.9 |
+| Tetradecane | 15.6 |
+| Pentanol | 24.1 |
 
 The take-home here is that diffusion measurements are specific to a solution temperature, and that good temperature control and/or monitoring ([try a methanol capillary!](https://dx.doi.org/doi/10.1002/cphc.201900150)) are essential for quantitative diffusion measurements. 
 
