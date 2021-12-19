@@ -2,21 +2,27 @@
 layout: post
 title: Don't be scared of diffusion NMR!
 description: Some basic tips for good NMR diffusion measurements
-date: 2021-12-20
+date: 2021-12-19
 comments: true
 tags: NMR, diffusion, chemistry
 categories: work
 ---
 
 
-A friend messaged me the other day for some advice on how to run diffusion NMR measurements - or perhaps more accurately, on how _not_ to run them. Without meaning to be in any way comprehensive and assuming basic familiarity with NMR and diffusion, here are some of thoughts on the matter.
- 
+A friend messaged me the other day for some advice on how to run diffusion NMR measurements - or perhaps more accurately, on how _not_ to run them. Without meaning to be in any way comprehensive and assuming basic familiarity with NMR and diffusion, here are some of thoughts on the matter. Here the key things to be aware of at all times when performing diffusion NMR measurements, as I see it:
+
+1. Changes in (static) sample temperature or viscosity during the measurement or between measurements
+2. Convection
+3. Peak overlap between different chemical species
+4. Changing signal intensity during the measurement correlated with the gradient list
+
+
 # Diffusion: basic physics 
 
 What governs diffusion rates? The Stokes-Einstein-[Sutherland](https://doi.org/10.1080/14786440509463331) equation for the diffusion of a hard spherical particle at low Reynolds number tells us:
 
 $$
-D = \frac{k_B T}{6\pi\eta r{
+D = \frac{k_B T}{6\pi\eta r}
 $$
 
 where $$k_B$$ is Boltzmann's constant, $$T$$ is the (absolute) temperature, $$\eta$$ is the dynamic viscosity, and $$r$$ is the radius of the diffusing particle. It would be tempting to say that diffusion is only really sensitive to changes of $$r$$, since $$\eta$$ is fixed for a given solvent and temperature changes will be relatively small for a system at 298 K +/- a degree or so. <em>This is not the case</em>, as for most solvents the viscosity $$\eta$$ _also_ varies strongly as a function of temperature. Empirical measurements have found that the dependence of diffusion on temperature is often closer to an exponential Arrhenian relationship:
@@ -68,19 +74,21 @@ $$
 
 ## Overlapping peaks give averaged diffusion coefficients
 
+Pulsed-gradient diffusion NMR measurements involve:
+1. Acquiring a sequence of 1D spectra with a range of gradient pulse strengths
+2. Extracting the intensities (integrals or peak heights) of peaks of interest
+3. Fitting the Stejsal-Tanner equation to these intensities as a function of gradient strength, and obtaining diffusion coefficients
+
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/diffusionnmr/peakoverlap.png class: "img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Diffusion NMR measurements generally cannot resolve the diffusion coefficients of two overlapping peaks. Here, compounds A (red peaks) and B (blue peaks) respectively have diffusion coefficients of 1 and 3. These diffusion coefficients can be measured accurately by integrating non-overlapping peaks and fitting peak intensities to the Stejskal-Tanner equation, but if the overlapping peaks are used an intermediate diffusion value will be obtained.  
+    Diffusion NMR measurements generally cannot resolve the diffusion coefficients of two overlapping peaks. Here, compounds A (red peaks) and B (blue peaks) respectively have diffusion coefficients of 1 and 3. These diffusion coefficients can be measured accurately by integrating non-overlapping peaks (red and blue lines) and fitting peak intensities to the Stejskal-Tanner equation. If the overlapping peak (green) is used  for monoexponential fitting, an intermediate _average_ diffusion value will be obtained.
 </div>
 
-* Peak overlap
-* Convection
-* Changing signal intensity during the measurement correlated with the gradient list
-* Changes in (static) sample temperature or viscosity
 
 
 
