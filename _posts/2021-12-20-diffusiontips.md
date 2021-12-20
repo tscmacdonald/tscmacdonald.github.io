@@ -9,13 +9,9 @@ categories: work
 ---
 
 
-A friend messaged me the other day for some advice on how to run diffusion NMR measurements - or perhaps more accurately, on how _not_ to run them. Without meaning to be in any way comprehensive and assuming basic familiarity with NMR and diffusion, here are some of thoughts on the matter. Here the key things to be aware of at all times when performing diffusion NMR measurements, as I see it:
+A friend messaged me the other day for some advice on how to run diffusion NMR measurements - or perhaps more accurately, on how _not_ to run them. Here are some thoughts on the matter and on potential problems to be aware of when running diffusion NMR measurements. I assume basic familiarity with NMR and diffusion, and don't meant to be at all comprehesive. If you're starting to think about diffusion NMR but have no experience with it, I'd recommend starting with Bruker's Diffusion NMR manual (a practical how-to guide) and then taking a look at Bill Price's two articles on the fundamentals of pulsed gradient diffusion measurements: [Part 1: Basic Theory](https://doi.org/10.1002/(SICI)1099-0534(1997)9:5%3C299::AID-CMR2%3E3.0.CO;2-U) and [Part 2: Experimental Aspects](https://doi.org/10.1002/(SICI)1099-0534(1998)10:4%3C197::AID-CMR1%3E3.0.CO;2-S).
 
-1. Changes in (static) sample temperature or viscosity during the measurement or between measurements
-2. Convection
-3. Peak overlap between different chemical species
-4. Changing signal intensity during the measurement correlated with the gradient list
-
+Finally, I've written this post assuming that the goal is to obtain an accurate, quantitative measure of diffusion under known conditions. This is not always necessary, and it's probably OK to be less careful when using diffusion measurements for more qualitative tasks (e.g. resolving the components of a crude mixture by DOSY NMR).
 
 # Diffusion: basic physics 
 
