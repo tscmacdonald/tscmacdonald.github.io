@@ -25,7 +25,11 @@ $$
 D = \frac{k_B T}{6\pi\eta r}
 $$
 
-where $$k_B$$ is Boltzmann's constant, $$T$$ is the (absolute) temperature, $$\eta$$ is the dynamic viscosity, and $$r$$ is the radius of the diffusing particle. It would be tempting to say that diffusion is only really sensitive to changes of $$r$$, since $$\eta$$ is fixed for a given solvent and temperature changes will be relatively small for a system at 298 K +/- a degree or so. <em>This is not the case</em>, as for most solvents the viscosity $$\eta$$ _also_ varies strongly as a function of temperature. Empirical measurements have found that the dependence of diffusion on temperature is often closer to an exponential Arrhenian relationship:
+where $$k_B$$ is Boltzmann's constant, $$T$$ is the (absolute) temperature, $$\eta$$ is the dynamic viscosity, and $$r$$ is the radius of the diffusing particle when approximated as a hard-edged sphere. This approximation 
+
+
+
+It's tempting to argue that $$\eta$$ is fixed for a given solvent and temperature changes will be relatively small for a system at 298 K +/- a degree or so, and so diffusion is only really sensitive to changes of $$r$$. __This is not the case__: for most solvents the viscosity $$\eta$$ __also__ varies strongly as a function of temperature, making the overall diffusion measurement much more sensitive to changes in temperature. Empirical measurements have found that the dependence of diffusion on temperature is often closer to an exponential Arrhenian relationship:
 
 $$
 D(T) = A\exp{(-\frac{E_a}{k_B T})}
@@ -45,6 +49,11 @@ It's not at all clear to me if $$A$$ and $$E_a$$ are physically meaningful quant
 The take-home here is that diffusion measurements are specific to a solution temperature, and that good temperature control and/or monitoring ([try a methanol capillary!](https://dx.doi.org/doi/10.1002/cphc.201900150)) are essential for quantitative diffusion measurements. 
 
 # Diffusion NMR
+Pulsed-gradient diffusion NMR measurements involve:
+1. Acquiring a sequence of 1D spectra with a range of gradient pulse strengths
+2. Extracting the intensities (integrals or peak heights) of peaks of interest
+3. Fitting the Stejsal-Tanner equation to these intensities as a function of gradient strength, and obtaining diffusion coefficients
+
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -55,13 +64,19 @@ The take-home here is that diffusion measurements are specific to a solution tem
     Basic pulsed gradient stimulated echo (PGSTE) diffusion NMR sequence.
 </div>
 
-Stejskal-Tanner:
+The Stejskal-Tanner equation relates the acquired signal intensity $$I$$ to the gradient pulse amplitude $$g$$, nuclear gyromagnetic ratio $$\gamma$$, gradient pulse length $$\delta$$ and measurement time $$\Delta$$, and diffusion coefficient $$D$$. The exact form of this equation varies for different pulse sequences and gradient pulse shapes, but a typical formulation (assuming perfectly square gradient pulses) is:
 
 $$
 I = I_0 e^{-D(g^2\delta^2\gamma^2(\Delta-\delta/3))}
 $$
 
+In theory we can run a diffusion experiment by varying any one of $$g$$, $$\delta$$, or $$\Delta$$. In practice, $$\delta$$ and $$\Delta$$ are almost always held constant while the gradient pulse amplitude $$g$$ is varied across a set range of typically 0–50 gauss/cm.
+
+
 ## Convection
+
+Convection is probably the most persistent problem affecting diffusion NMR measurements. It results from small temperature gradients across the sample, can occur at any time, and should never be forgotten or ignored. Convection is more likely in some systems than others: an experiment run with a room temperature-equilibrated instrument on a small sample in viscous DMSO is unlikely to suffer from convection, while a punching in a 20° temperature increase on a CDCl3 sample and running a diffusion experiment the moment the target temperature is reached will almost guarantee convection. [Time-resolved diffusion measurements](projects/enhanceddiffusion/) of dynamic reacting systems or systems under irradiation are also likely to suffer from convection.
+
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -72,13 +87,26 @@ $$
     Convection ruins diffusion NMR measurements and can occur at any time. Left: convection is often visible as an unusual phase twist in some of the 1D gradient slice spectra. Right: convection occurs when a more dense section of fluid is higher than a less dense section of fluid. Assuming positive thermal expansion (warmer fluid is less dense than cooler fluid), this can happen either when a vertical temperature gradient results in cool fluid sitting above warm fluid (Rayleigh-Benard convection) or when a horizontal temperature gradient exists (Hadley convection). A layer of warm fluid above a layer of cool fluid does not result in a density inversion, and cannot drive convection.
 </div>
 
+Here are some signs of convection to look for when running diffusion NMR experiments:
+* Convection will often cause phasing artefacts (see above), making it impossible to correctly phase all slices of the diffusion experiment at the same time. Always look at the spectral data before using it.
+* Convection is somewhat random. Repeat the same measurement several times: if the results vary meaningfully, this may indicate convection. 
+* Convection will always result in an obtained diffusion coefficient higher than the real diffusion coefficient. If a range of diffusion coefficients are measured for the same sample, the lower values are likely to be more accurate than the higher values.
+* The convection-induced error in a measurement increases roughly proportionally to $$\Delta$$, the diffusion measureing time, while diffusion measurements are independent of $$\Delta$$. Run a series of experiments with different $$\Delta$$: if $$D$$ increases with $$\Delta$$, this is likely convection. The true diffusion coefficient can sometimes be found by fitting a line through multiple $$D(\Delta)$$ measurements and extrapolating to $$\Delta = 0$$.
+
+
+Here are some tips for avoiding or preventing convection:
+* Use a more viscous solvent. Experiments in DMSO-d6 are much less likely to suffer from convection than experiments in CDCl3; experiments at low temperature (=increased viscosity) are less likely to suffer from convection than experiments at high temperature (=decreased viscosity).
+* Give the instrument plenty of time to equilibrate after temperature changes, and changing the temperature unnecessarily.
+* Use non-standard smaller sample tubes: convection is less likely to occur in smaller volumes. I've had success in replacing standard 5 mm NMR tubes with smaller 3 mm tunes. Similarly, don't overfill your sample: 0.5 mL in a standard tube is plenty.
+* Pack the sample with a physical obstruction to impede flow. [I've had success](https://pubs.acs.org/doi/10.1021/jacs.0c09072) (see SI) by adding short pieces of broken glass TLC capillaries to a standard sample tube, and I've heard good things about glass wool. Avoid magnetic or high surface area materials - you want to disrupt flow without changing the chemical or magnetic environment. This approach can make shimming take a little longer, but I've found that lineshapes are normally OK eventually.
+
+For more on this topic, see this paper and many others from Gareth Morris' research group: [Sample convection in liquid-state NMR: Why it is always with us, and what we can do about it](https://doi.org/10.1016/j.jmr.2014.12.006).
+
+Final note: some diffusion NMR pulse sequences incorporate "convection suppression" elements, designed to filter out and remove the influence of convection. I don't really understand how this works and am skeptical of relying on convection-suppressing sequences to filter out the effects of convection, rather than using the approaches above to physically prevent it.
+ 
 ## Overlapping peaks give averaged diffusion coefficients
 
-Pulsed-gradient diffusion NMR measurements involve:
-1. Acquiring a sequence of 1D spectra with a range of gradient pulse strengths
-2. Extracting the intensities (integrals or peak heights) of peaks of interest
-3. Fitting the Stejsal-Tanner equation to these intensities as a function of gradient strength, and obtaining diffusion coefficients
-
+Diffusion coefficients are obtained by fitting NMR peak intensities to the Stejskal-Tanner equation. "Intensity" here normally refers to either the peak integral or the peak amplitude: I prefer to use integrals due to the higher signal-to-noise and insensitivity to small changes in lineshape or shim during the experiment. But what happens when integrating a region of the spectrum captures overlapping peaks from multiple chemical species, or when looking at a peak corresponding to multiple chemical species in fast exchange? The data will give an __averaged__ diffusion coefficient sitting somewhere between the diffusion coefficients of the overlapping species. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -90,5 +118,9 @@ Pulsed-gradient diffusion NMR measurements involve:
 </div>
 
 
+If the overlapping species have reasonably different diffusion coefficients, it's sometimes possible to separately resolve their diffusion coefficients by fitting a multiexponential function to the obtained data—something like:
 
-
+$$
+I = I_1 e^{-D_1(g^2\delta^2\gamma^2(\Delta-\delta/3))}_1 + I_2 e^{-D_2(g^2\delta^2\gamma^2(\Delta-\delta/3))}
+$$
+Unfortunately, resolving overlapping peaks into separate diffusion coefficients like this tends to be difficult and uncertainties on the fitted parameters are often large. In most cases it's probably better to throw away the overlapping peaks and limit your analysis to the well-resolved peaks of interest.
