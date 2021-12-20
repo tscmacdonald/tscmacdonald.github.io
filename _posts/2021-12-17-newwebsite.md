@@ -3,7 +3,7 @@ layout: post
 title: Building a personal website
 description: If you can read this it's probably working
 date: 2021-12-17
-comments: true
+comments: false
 tags: computers, web
 categories: personal
 ---

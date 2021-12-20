@@ -3,7 +3,7 @@ layout: post
 title: Don't be scared of diffusion NMR!
 description: Some basic tips for good NMR diffusion measurements
 date: 2021-12-19
-comments: true
+comments: false
 tags: NMR, diffusion, chemistry
 categories: work
 ---
