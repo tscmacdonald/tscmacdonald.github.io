@@ -123,4 +123,5 @@ If the overlapping species have reasonably different diffusion coefficients, it'
 $$
 I = I_1 e^{-D_1(g^2\delta^2\gamma^2(\Delta-\delta/3))}_1 + I_2 e^{-D_2(g^2\delta^2\gamma^2(\Delta-\delta/3))}
 $$
+
 Unfortunately, resolving overlapping peaks into separate diffusion coefficients like this tends to be difficult and uncertainties on the fitted parameters are often large. In most cases it's probably better to throw away the overlapping peaks and limit your analysis to the well-resolved peaks of interest.
