@@ -75,7 +75,7 @@ In theory we can run a diffusion experiment by varying any one of $$g$$, $$\delt
 
 ## Convection
 
-Convection is probably the most persistent problem affecting diffusion NMR measurements. It results from small temperature gradients across the sample, can occur at any time, and should never be forgotten or ignored. Convection is more likely in some systems than others: an experiment run with a room temperature-equilibrated instrument on a small sample in viscous DMSO is unlikely to suffer from convection, while a punching in a 20° temperature increase on a CDCl3 sample and running a diffusion experiment the moment the target temperature is reached will almost guarantee convection. [Time-resolved diffusion measurements](projects/enhanceddiffusion/) of dynamic reacting systems or systems under irradiation are also likely to suffer from convection.
+Convection is probably the most persistent problem affecting diffusion NMR measurements. It results from small temperature gradients across the sample, can occur at any time, and should never be forgotten or ignored. Convection is more likely in some systems than others: an experiment run with a room temperature-equilibrated instrument on a small sample in viscous DMSO is unlikely to suffer from convection, while a punching in a 20° temperature increase on a CDCl3 sample and running a diffusion experiment the moment the target temperature is reached will almost guarantee convection. [Time-resolved diffusion measurements](https://tscmacdonald.github.io/projects/enhanceddiffusion/) of dynamic reacting systems or systems under irradiation are also likely to suffer from convection.
 
 
 <div class="row mt-3">
