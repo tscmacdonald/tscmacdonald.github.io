@@ -9,8 +9,8 @@ description: Conference presentations, with links to posters or slides where ava
 ---
 
 ## 2021
-* Australian Institute of Physics (AIP) Summer Meeting 2021 (Brisbane/virtual). Accepted oral presentation: _Direct Measurements of Singlet Fission Spin Dynamics by 2D Nutation Spectroscopy_.
-* ISMAR-APNMR 2021 (Japan/virtual). Accepted oral presentation: _Direct Measurements of Singlet Fission Spin Dynamics by 2D Nutation Spectroscopy_.
+* Australian Institute of Physics (AIP) Summer Meeting 2021 (Brisbane/virtual). Accepted oral presentation: _Direct Measurements of Singlet Fission Spin Dynamics by 2D Nutation ESR Spectroscopy_.
+* ISMAR-APNMR 2021 (Japan/virtual). Accepted oral presentation: _Direct Measurements of Singlet Fission Spin Dynamics by 2D Nutation ESR Spectroscopy_.
 
 ## 2020
 * Royal Australian Chemical Institute (RACI) Supramolecular Meeting 2020/2021 (virtual). Oral presentation: _An All-optical Molecular Amplifier_. [Slides](/assets/documents/talks/2020-2021racisupra_photoniclogic_static.pdf).
