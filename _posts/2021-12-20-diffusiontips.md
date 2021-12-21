@@ -18,14 +18,12 @@ Finally, I've written this post assuming that the goal is to obtain an accurate,
 What governs diffusion rates? The Stokes-Einstein-[Sutherland](https://doi.org/10.1080/14786440509463331) equation for the diffusion of a hard spherical particle at low Reynolds number tells us:
 
 $$
-D = \frac{k_B T}{6\pi\eta r}
+D = \frac{k_B T}{6\pi\eta R_H}
 $$
 
-where $$k_B$$ is Boltzmann's constant, $$T$$ is the (absolute) temperature, $$\eta$$ is the dynamic viscosity, and $$r$$ is the radius of the diffusing particle when approximated as a hard-edged sphere. This approximation 
+where $$k_B$$ is Boltzmann's constant, $$T$$ is the (absolute) temperature, $$\eta$$ is the dynamic viscosity, and $$R_H$$ is the hydrodynamic radius of the diffusing particle - the radius of a hard-edged sphere that would diffuse at the same rate. Real molecules are generally neither spherical nor hard-edged, so be careful when relating $$R_H$$ to actual dimensions. I think of the hydrodynamic radius as an effective measure of the average size of a molecule incorporating any supramolecular ordering that may form: $$R_H$$ of a single chemical species might vary in different solvents as a result of supramolecular (self-)association through solvent coordination, H bonding, ion pairing, cation-$$\pi$$ interactions, and so on. As an example, Li+ ions coordinated in THF might appear "bigger" than Li+ in non-coordinating hexane. $$R_H$$ can also vary based on the population distributions of different conformers or tautomers that may be favoured in different solvent environments.
 
-
-
-It's tempting to argue that $$\eta$$ is fixed for a given solvent and temperature changes will be relatively small for a system at 298 K +/- a degree or so, and so diffusion is only really sensitive to changes of $$r$$. __This is not the case__: for most solvents the viscosity $$\eta$$ __also__ varies strongly as a function of temperature, making the overall diffusion measurement much more sensitive to changes in temperature. Empirical measurements have found that the dependence of diffusion on temperature is often closer to an exponential Arrhenian relationship:
+It might be tempting to argue that $$\eta$$ is fixed for a given solvent and that temperature changes will be relatively small for a system at 298 K +/- a degree or so, and that diffusion is thus only really sensitive to changes of $$R_H$$. __This is not the case__: for most solvents the viscosity $$\eta$$ __also__ varies strongly as a function of temperature, making the overall diffusion measurement much more sensitive to changes in temperature. Empirical measurements have found that the dependence of diffusion on temperature is often closer to an exponential Arrhenian relationship:
 
 $$
 D(T) = A\exp{(-\frac{E_a}{k_B T})}
