@@ -3,6 +3,7 @@ layout: post
 title: Walls of Jerusalem - January 2022
 description: Walking in Tasmania's Walls of Jerusalem National Park
 date: 2022-01-15 12:00:00
+comments: true
 tags: walking,camping
 categories: hobbies
 ---
