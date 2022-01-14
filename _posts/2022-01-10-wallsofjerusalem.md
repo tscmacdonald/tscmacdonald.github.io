@@ -15,13 +15,13 @@ Day 1 opened with grey but dry weather. We started with a steep slog from Lake R
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220104_173812.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220104_173812.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220104_173819.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220104_173819.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220104_192236.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220104_192236.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
 </div>
 
@@ -30,31 +30,31 @@ Day 2 was our only clear weather of the trip, which we decided to make the most 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_094601(0).jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_094601(0).jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_100814.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_100814.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_100827.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_100827.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_102709.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_102709.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_104856.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_104856.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_111958.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_111958.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_142532.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_142532.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_145105.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_145105.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_180426.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220105_180426.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
 </div>
 
@@ -62,25 +62,25 @@ With the weather forecast taking a sharp turn for the worst, we decided to make 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_080100.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_080100.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_080407.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_080407.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_101943.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_101943.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_105714.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_105714.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_112353.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_112353.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_125309.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_125309.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_125948.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% responsive_image path: assets/img/2201_wallsofjerusalem/20220106_125948.jpg class: "img-fluid z-depth-1" zoomable: true %}
     </div>
 </div>
 
