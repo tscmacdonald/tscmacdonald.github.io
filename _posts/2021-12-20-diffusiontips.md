@@ -92,8 +92,8 @@ Here are some signs of convection to look for when running diffusion NMR experim
 
 Here are some tips for avoiding or preventing convection:
 * Use a more viscous solvent. Experiments in DMSO-d6 are much less likely to suffer from convection than experiments in CDCl3; experiments at low temperature (=increased viscosity) are less likely to suffer from convection than experiments at high temperature (=decreased viscosity).
-* Give the instrument plenty of time to equilibrate after temperature changes, and changing the temperature unnecessarily.
-* Use non-standard smaller sample tubes: convection is less likely to occur in smaller volumes. I've had success in replacing standard 5 mm NMR tubes with smaller 3 mm tunes. Similarly, don't overfill your sample: 0.5 mL in a standard tube is plenty.
+* Give the instrument plenty of time to equilibrate after temperature changes, and avoid changing the temperature unnecessarily.
+* Use non-standard smaller NMR sample tubes: convection is less likely to occur in more narrow geometries. I've had success in replacing standard 5 mm NMR tubes with smaller 3 mm tunes. Similarly, don't overfill your sample: 0.5 mL in a standard tube is plenty.
 * Pack the sample with a physical obstruction to impede flow. [I've had success](https://pubs.acs.org/doi/10.1021/jacs.0c09072) (see SI) by adding short pieces of broken glass TLC capillaries to a standard sample tube, and I've heard good things about glass wool. Avoid magnetic or high surface area materials - you want to disrupt flow without changing the chemical or magnetic environment. This approach can make shimming take a little longer, but I've found that lineshapes are normally OK eventually.
 
 For more on this topic, see this paper and many others from Gareth Morris' research group: [Sample convection in liquid-state NMR: Why it is always with us, and what we can do about it](https://doi.org/10.1016/j.jmr.2014.12.006).
