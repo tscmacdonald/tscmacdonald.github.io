@@ -2,7 +2,7 @@
 layout: post
 title: Walls of Jerusalem - January 2022
 description: Walking in Tasmania's Walls of Jerusalem National Park
-date: 2022-01-15
+date: 2022-01-10
 comments: true
 tags: walking, camping
 categories: hobbies
@@ -12,6 +12,7 @@ categories: hobbies
 A summer trip to the [Walls of Jerusalem National Park](https://en.wikipedia.org/wiki/Walls_of_Jerusalem_National_Park) with some friends. We'd planned to camp for three nights in the park (Wild Dog Creek, Dixon's Kingdom, and Lake Ball), but with the weather forecast turning sour with strong wind and flood warnings we ended up cutting the trip short by a day and skipping the lake to head home on day 3.
 
 Day 1 opened with grey but dry weather. We started with a steep slog from Lake Rowallan up to the plateau, followed by a more gentle walk alongside tarns and small lakes to eventually reach Wild Dog campsite nestled at the foot of Herod's Gate.
+
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/2201_wallsofjerusalem/20220104_173812.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
@@ -22,7 +23,6 @@ Day 1 opened with grey but dry weather. We started with a steep slog from Lake R
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/2201_wallsofjerusalem/20220104_192236.jpg class: "img-fluid rounded z-depth-1" zoomable: true %}
     </div>
-    
 </div>
 
 
