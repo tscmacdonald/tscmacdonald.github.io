@@ -8,7 +8,10 @@ horizontal: false
 description: Conference presentations, with links to posters or slides where available.
 ---
 
+[![](/assets/documents/posters/logic_acex_goodbye.png){ width=300px }](/assets/documents/posters/logic_acex_goodbye.png) 
+[![](/assets/documents/posters/220623_quintetposter.png){ width=300px }](/assets/documents/posters/220623_quintetposter.png) 
 ## 2022
+* Exciton Science CoE Annual Meeting. Poster on _Exciton Logic_. [Poster PDF here](/assets/documents/posters/logic_acex_goodbye.pdf). Awarded prize for best-looking poster.
 * RACI Congress (Brisbane). Poster on _Spin Dynamics in Singlet Fission_. [Poster PDF](/assets/documents/posters/220623_quintetposter.pdf). Awarded Physical Chemistry division poster prize.
 * RSC ESR Conference 2022 (St. Andrews). Poster on _Spin Dynamics in Singlet Fission_. [Poster PDF](/assets/documents/posters/220623_quintetposter.pdf). Awarded one of three poster prizes.
 
