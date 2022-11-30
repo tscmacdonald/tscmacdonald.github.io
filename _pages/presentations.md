@@ -7,7 +7,7 @@ display_categories: [work]
 horizontal: false
 description: Conference presentations, with links to posters or slides where available.
 ---
-<table>
+<table width="100%">
 <tr>
 <td><a href="/assets/documents/posters/logic_acex_goodbye.png"><img src="/assets/documents/posters/logic_acex_goodbye.png" width="200"></a></td>
 <td><a href="/assets/documents/posters/220623_quintetposter.png"><img src="/assets/documents/posters/220623_quintetposter.png" width="200"></a></td>
