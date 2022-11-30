@@ -8,11 +8,10 @@ horizontal: false
 description: Conference presentations, with links to posters or slides where available.
 ---
 
-
+<a href="/assets/documents/posters/logic_acex_goodbye.png"><img src="/assets/documents/posters/logic_acex_goodbye.png" width="200"></a>  <a href="/assets/documents/posters/assets/documents/posters/"220623_quintetposter.png"><img src="/assets/documents/posters/"220623_quintetposter.png" width="200"></a>  <a href="/assets/documents/posters/RaciInorg19.png"><img src="/assets/documents/posters/RaciInorg19.png" width="200"></a>
 ## 2022
-
-* Exciton Science CoE Annual Meeting. Poster on _Exciton Logic_. [Poster PDF here](/assets/documents/posters/logic_acex_goodbye.pdf). Awarded prize for best-looking poster. <a href="/assets/documents/posters/logic_acex_goodbye.png"><img src="/assets/documents/posters/logic_acex_goodbye.png" width="200"></a>
-* RACI Congress (Brisbane). Poster on _Spin Dynamics in Singlet Fission_. [Poster PDF](/assets/documents/posters/220623_quintetposter.pdf). Awarded Physical Chemistry division poster prize. <a href=<a href="/assets/documents/posters/assets/documents/posters/"220623_quintetposter.png"><img src="/assets/documents/posters/"220623_quintetposter.png" width="200"></a>
+* Exciton Science CoE Annual Meeting. Poster on _Exciton Logic_. [Poster PDF here](/assets/documents/posters/logic_acex_goodbye.pdf). Awarded prize for best-looking poster. 
+* RACI Congress (Brisbane). Poster on _Spin Dynamics in Singlet Fission_. [Poster PDF](/assets/documents/posters/220623_quintetposter.pdf). Awarded Physical Chemistry division poster prize. 
 * RSC ESR Conference 2022 (St. Andrews). Poster on _Spin Dynamics in Singlet Fission_. [Poster PDF](/assets/documents/posters/220623_quintetposter.pdf). Awarded one of three poster prizes.
 
 ## 2021
@@ -24,7 +23,7 @@ description: Conference presentations, with links to posters or slides where ava
 * RACI Supramolecular Meeting 2019/2020 (Brisbane). Oral presentation: _Photoswitchable Antielectrostatic Anion Assemblies in Solution_. [Slides PDF](/assets/documents/talks/2019-2020racisupra_aehb_static.pdf).
 
 ## 2019
-* RACI Inorganic Conference (Wollongong). Poster: _Enhanced diffusion of active catalysts_. [Poster PDF](/assets/documents/posters/RaciInorg19.pdf). Awarded conference prize for best poster. <a href="/assets/documents/posters/RaciInorg19.png"><img src="/assets/documents/posters/RaciInorg19.png" width="200"></a>
+* RACI Inorganic Conference (Wollongong). Poster: _Enhanced diffusion of active catalysts_. [Poster PDF](/assets/documents/posters/RaciInorg19.pdf). Awarded conference prize for best poster. 
 
 ## 2017
 * RACI Centenary Congress (Melbourne). Poster on DASA photoswitches.
