@@ -7,8 +7,14 @@ display_categories: [work]
 horizontal: false
 description: Conference presentations, with links to posters or slides where available.
 ---
+<table>
+<tr>
+<td><a href="/assets/documents/posters/logic_acex_goodbye.png"><img src="/assets/documents/posters/logic_acex_goodbye.png" width="200"></a></td>
+<td><a href="/assets/documents/posters/220623_quintetposter.png"><img src="/assets/documents/posters/220623_quintetposter.png" width="200"></a></td>
+<td><a href="/assets/documents/posters/RaciInorg19.png"><img src="/assets/documents/posters/RaciInorg19.png" width="200"></a></td>
+</tr>
+</table>
 
-<a href="/assets/documents/posters/logic_acex_goodbye.png"><img src="/assets/documents/posters/logic_acex_goodbye.png" width="200"></a>  <a href="/assets/documents/posters/220623_quintetposter.png"><img src="/assets/documents/posters/220623_quintetposter.png" width="200"></a>  <a href="/assets/documents/posters/RaciInorg19.png"><img src="/assets/documents/posters/RaciInorg19.png" width="200"></a>
 ## 2022
 * Exciton Science CoE Annual Meeting. Poster on _Exciton Logic_. [Poster PDF here](/assets/documents/posters/logic_acex_goodbye.pdf). Awarded prize for best-looking poster. 
 * RACI Congress (Brisbane). Poster on _Spin Dynamics in Singlet Fission_. [Poster PDF](/assets/documents/posters/220623_quintetposter.pdf). Awarded Physical Chemistry division poster prize. 
