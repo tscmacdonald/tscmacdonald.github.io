@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Thomas MacDonald
+
+
+  | Displacement mapping the 2019 Albanian earthquake with Sentinel-1 InSAR
+
+</title>
+<meta name="description" content="Thomas MacDonald's personal website. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="https://tscmacdonald.github.io/blog/2020/albanianinsar/">
+
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="https://tscmacdonald.github.io/">
+       Thomas MacDonald
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              Blog
+              
+            </a>
+          </li>
+          
+		  
+		  
+		  
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/presentations/">
+                Presentations
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                Projects
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                Publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+		  <!--
+          
+            <div class = "toggle-container">
+              <a id = "light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+		  -->
+		  
+		  <!-- CV -->
+		  <li class="nav-item">
+            <a class="nav-link" href="https://tscmacdonald.github.io/assets/documents/macdonald_CV.pdf">
+              CV
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+
+
+
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Displacement mapping the 2019 Albanian earthquake with Sentinel-1 InSAR</h1>
+    <p class="post-meta">April 23, 2020</p>
+    <p class="post-tags">
+      <a href="/blog/2020"> <i class="fas fa-calendar fa-sm"></i> 2020 </a>
+      
+        ·  
+        
+        <a href="/blog/tag/remote-sensing">
+          <i class="fas fa-hashtag fa-sm"></i> remote-sensing</a>  
+          
+      
+
+      
+        ·  
+        
+        <a href="/blog/category/hobbies">
+          <i class="fas fa-tag fa-sm"></i> hobbies</a>  
+          
+      
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>With COVID isolation continuing, I’ve returned to a topic that has interested me for a long time: synthetic aperture radar (SAR), and more specifically SAR interferometry (InSAR). InSAR is a great tool for measuring small ground displacements that can result from earthquakes, landslides, or subsidence into cavities such as those left behind by oil and gas exploration. There are a number of SAR satellites in operation currently, but I’ll be using freely accessible data from the ESA’s Sentinel-1 platform.</p>
+
+<p>As a first toy problem, I decided to look at the site of the <a href="https://en.wikipedia.org/wiki/2019_Albania_earthquake" target="_blank" rel="noopener noreferrer">earthquake that hit Albania last year</a> on November the 26th. The steps I take are largely based on <a href="http://step.esa.int/docs/tutorials/S1TBX%20TOPSAR%20Interferometry%20with%20Sentinel-1%20Tutorial_v2.pdf" target="_blank" rel="noopener noreferrer">this ESA tutorial document</a>.</p>
+
+<p>This earthquake hit Albania near the town of Durres, so to start off I chose two SLC data products (<code class="language-plaintext highlighter-rouge">S1A IW SLC 1SDV 20191125T164052 20191125T164119 030070 036F2E 4A87</code> and <code class="language-plaintext highlighter-rouge">S1A IW SLC 1SDV 20191207T164051 20191207T164118 030245 03752F F624</code>) from Copernicus Scihub (not to be confused with Sci-hub!) that were acquired on the 25th of November and the 7th of December. Interferometry involves measuring phase differences between pairs of imagery, so we need phase-sensitive single-look complex (SLC) data products rather then the smaller and more processed products often used for SAR imaging.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/1-480x361.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/1-800x602.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/albanianinsar/1.png" data-zoomable="">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Acquisition footprint for the imagery used here. We’ll be focusing on the stretch of Albanian coast just north of Durres.
+</div>
+
+<p>After downloading the two SLC products, I imported both into into ESA’s SNAP toolbox and used the TOPS Split operator to cut down the product to the region and data of interest. We don’t need the VH scattered polarisation for interferometry and we don’t care about Italy or the Adriatic, so I sliced each data product to only include VV-polarised data from bursts 4-9 of subswath IW3, as below.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/2-480x272.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/2-800x453.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/albanianinsar/2.png" data-zoomable="">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    TOPS Split to reduce the size of the dataset to the regions and polarisation of interest.
+</div>
+
+<p>I then applied orbit corrections to each each product (<em>Radar &gt; Apply Orbit File</em>) and combined the two products into a coregistered stack with back-geocoding using the SRTM 1sec model (<em>Radar &gt; Coregistration &gt; S-1 TOPS Coregistration &gt; S-1 Back Geocoding</em>). I expected this to mask out the zero-elevation sea portion of the imagery, but it didn’t seem to do so. With coregistered data in hand, I was then able to create an interferometric product in SNAP (<em>Radar &gt; Interferometric &gt; Products &gt; Interferogram formation</em>), checking ‘Subtract topographic phase” to remove the influence of static ground geometry. The interferogram produced at this point is very noisy and still contains horizontal bands showing the gaps between the separate bursts collected by S-1, but the fringes of an interference pattern centred on the coast are visible if you squint a little bit.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/3-480x190.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/3-800x317.png"></source>
+    
+    <source media="(max-width: 1400px)" srcset="/assets/resized/3-1400x554.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/albanianinsar/3.png" data-zoomable="">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Interferogram. The noisy area on the left hand side is the Adriatic sea, while the land area has slightly more coherent interference phases. Horizontal bands mark the separation between the six burst images making up this large scene. The deformation resulting from the earthquake is visible as a series of concentric interference fringes, about halfway up the image and a third of the way in from the left.
+</div>
+
+<p>The next steps are to stitch the different bursts together into a composite (“debursting”; <em>Radar &gt; Sentinel-1 TOPS &gt; S-1 TOPS Deburst</em>), and use a Goldstein filter (<em>Radar &gt; Interferometric &gt; Filtering &gt; Goldstein Phase Filtering</em>) to clean up some of the noise. The image becomes much more clear at this point, although there are still patches of noise. We now have what looks like some decent interferometric data, but converting this into displacement measurements requires the additional step of “unwrapping”. Unwrapping is a computationally expensive process that brings my laptop to its knees for several hours at a time, so I took a subset of the most relevant parts of the image to avoid wasting CPU time processing the boring parts. In hindsight even this subset took an unreasonable amount of time to process and I should have trimmed even more aggressively.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/4-480x188.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/4-800x313.png"></source>
+    
+    <source media="(max-width: 1400px)" srcset="/assets/resized/4-1400x548.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/albanianinsar/4.png" data-zoomable="">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Effects of debursting and Goldstein phase filterering: the bursts have been stitched into a single composite scene, and the pattern of the phase distortions is much more clearly visible. Only the subset within the rectangle is considered further.
+</div>
+
+<p>Unwrapping attempts to convert periodic phase measurements into absolute displacement measurements, effectively by working out the boundaries between integer numbers of wavelengths. I’ve tried to illustrate this below with a crude MS Paint slice-up of a line measured from the centre of the concentric phase rings to the top right corner of the subset shown above.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/5-480x379.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/5-800x631.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/albanianinsar/5.png" data-zoomable="">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Phase unwrapping to access displacement information. Phase is periodic over -π/+π, but successful unwrapping can tell us how many wavelengths two points are removed from each other, as well as the relative phase. Here, there seems to be a 3 or 4-wavelength difference in displacement between the centre of the disturbance (left) and the top right corner of the image (right), depending on whether the extremely noisy band is a full phase cycle or not. This corresponds to a ~15–20 cm displacement at a C-band SAR wavelength of 5.5 cm.
+</div>
+
+<p>SNAP can’t do phase unwrapping, but it can interface with a utility—snaphu—which does. I can’t seem to get the actual processing to work within SNAP, but was able to export the phase data for unwrapping (<em>Radar &gt; Interferometric &gt; Unwrapping &gt; Snaphu Export</em>) and then run snaphu from the command line on the exported data. This took about five hours wall time to complete on my laptop (Ryzen 3500U), running as 6 CPU threads.</p>
+
+<p>Once the unwrapping has finished, the unwrapped data can be imported into SNAP (<em>Radar &gt; Interferometric &gt; Unwrapping &gt; Snaphu Import</em>) and converted from unwrapped phase information to displacement data (<em>Radar &gt; Interferometric &gt; Products &gt; Phase to Displacement</em>). We now have a displacement map (below), but it’s hard to relate this to on-the ground differences. The major changes in displacement (to the left and bottom) are over the water, probably caused by changing tides, and the imagery is still a satellite-eye view that can’t be directly projected onto terrain.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/6-480x221.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/6-800x368.png"></source>
+    
+    <source media="(max-width: 1400px)" srcset="/assets/resized/6-1400x644.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/albanianinsar/6.png" data-zoomable="">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Displacement map before range-doppler correction. The deformation resulting from the earthquake can be seen as a pale yellow patch in the centre of the image, but is overshadowed by the uninteresting but major changes in displacement over the Adriatic sea.
+</div>
+
+<p>Finally, we can run a range-doppler correction on the displacement map (<em>Radar &gt; Geometric &gt; Terrain Correction &gt; Range-Doppler Terrain Correction</em>) to produce a displacement map of the land area only, scaled to a correct geographic projection. This product can be viewed in SNAP, but for convenience we can export it as a KMZ file and view it in Google Earth superimposed over optical imagery. At this point it’s clear that the unwrapping process has somehow missed the baseline (I suspect that the large area of water might have interfered): the relative changes in displacement look good, but somehow we have the earthquake epicentre set as the location which hasn’t moved, and the rest of the country having dropped by ~10 cm around it. This is clearly incorrect, but I don’t actually know how to re-set the baseline for the displacement band correctly. For a rough estimate I’d add about 9–9.5 cm to the numbers displayed on the legend, suggesting that Hamallaj was lifted by about 11–12 cm following the November earthquake.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/7-480x288.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/7-800x480.png"></source>
+    
+    <source media="(max-width: 1400px)" srcset="/assets/resized/7-1400x840.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/albanianinsar/7.png" data-zoomable="">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Displacement mapping exported to Google Earth. The upthrust from the earthquake is clearly visible, centred on Hamallaj, but the baseline has somehow ended up miss-set such that the rest of the country appears to have dropped while Hamallaj maintained its previous location.
+</div>
+
+<p>I don’t have much other information regarding this earthquake to compare this data to, but Wikipedia has a nice map showing the shaking intensity resulting from the earthquake. It compares well to the displacement data obtained here, but the epicentre seems to sit to the northeast of the region of maximum displacement (white-yellow). A little further north there’s an area that the interferometry data says <em>dropped</em> as a result of the earthquake, shown in blue. Knowing very little about seismology, my interpretation of this would be that the earthquake involved a movement from the northeast to the southwest: following the fault, rock moved southwest leading to a bulge in the southwest and a depression in the northeast.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/8-480x327.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/8-800x545.png"></source>
+    
+    <source media="(max-width: 1400px)" srcset="/assets/resized/8-1400x953.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/albanianinsar/8.png" data-zoomable="">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    The displacement map compares well to the map of shaking intensity, and from first principles I think it’s suggestive of a movement towards the southwest, leaving a dip (blue) to the northeast.
+</div>
+
+<p>It seems that this guess is actually pretty close to the truth. An article published on studying this earthquake with Sentinel-1 data (<a href="https://doi.org/10.3390/rs12050846" target="_blank" rel="noopener noreferrer"><em>Remote Sensing</em> <strong>2020</strong>, <em>12</em>, 846</a>) includes this figure showing a modelled downwards displacement to the northeast, but it looks like the patchy blue stuff in the displacement data above is an artefact rather than a real deformation. Ah well, you don’t get everything but I’m still pretty happy with how this turned out.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/9-480x467.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/albanianinsar/9.png" data-zoomable="">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    This work from some the actual experts in the area seems reasonably close to my tentative guess of a northeast to southwest fault.
+</div>
+
+<p>For anyone interested, here’s the <a href="https://drive.google.com/file/d/1_TBzUFNNS-o2Nrai4obZTgf2uTMb-rzf/view?usp=sharing" target="_blank" rel="noopener noreferrer">.kmz</a> of the displacement data.</p>
+
+  </article>
+
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    <!--&copy; Copyright 2022 Thomas S. C. MacDonald. -->
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. <!-- Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>. -->
+
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-216605799-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-216605799-1');
+</script>
+
+
+
+
+
+
+</html>

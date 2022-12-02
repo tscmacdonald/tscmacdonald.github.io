@@ -12,7 +12,7 @@
   Thomas MacDonald
 
 
-  | Blog
+  | a post with math
 
 </title>
 <meta name="description" content="Thomas MacDonald's personal website. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://tscmacdonald.github.io/blog/">
+<link rel="canonical" href="https://tscmacdonald.github.io/ExamplePosts/blog/2015-10-20-math/">
 
 
 <!-- Dark Mode -->
@@ -84,8 +84,6 @@
             <a class="nav-link" href="/blog/">
               Blog
               
-              <span class="sr-only">(current)</span>
-              
             </a>
           </li>
           
@@ -93,8 +91,6 @@
 		  
 		  
           <!-- Other pages -->
-          
-          
           
           
           
@@ -236,320 +232,60 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
-
-  <div class="header-bar">
-    <h1>Blog</h1>
-    <h2>Short thoughts on miscellaneous topics</h2>
-  </div>
+      
 
 
-  <ul class="post-list">
-    
 
-    
-    
-    
-    
 
-    <li>
-      <h3><a class="post-title" href="/blog/2022/wallsofjerusalem/">Walls of Jerusalem - January 2022</a>
-      </h3>
-      <p>Walking in Tasmania's Walls of Jerusalem National Park</p>
-      <p class="post-meta"> 6 min read &nbsp; &middot; &nbsp;
-        January 10, 2022
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2022">
-          <i class="fas fa-calendar fa-sm"></i> 2022 </a>
 
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">a post with math</h1>
+    <p class="post-meta">October 20, 2015</p>
+    <p class="post-tags">
+      <a href="/blog/2015"> <i class="fas fa-calendar fa-sm"></i> 2015 </a>
+      
+        ·  
+        
+        <a href="/blog/tag/formatting%20math">
+          <i class="fas fa-hashtag fa-sm"></i> formatting math</a>  
           
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/walking,">
-              <i class="fas fa-hashtag fa-sm"></i> walking,</a> &nbsp;
-              
-            <a href="/blog/tag/camping">
-              <i class="fas fa-hashtag fa-sm"></i> camping</a> &nbsp;
-              
-          
+      
 
+      
+        ·  
+        
+        <a href="/blog/category/sample-posts">
+          <i class="fas fa-tag fa-sm"></i> sample-posts</a>  
           
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
+      
+
     </p>
-    </li>
+  </header>
 
-    
+  <article class="post-content">
+    <p>This theme supports rendering beautiful math in inline and display modes using <a href="https://www.mathjax.org/" target="_blank" rel="noopener noreferrer">MathJax 3</a> engine. You just need to surround your math expression with <code class="language-plaintext highlighter-rouge">$$</code>, like <code class="language-plaintext highlighter-rouge">$$ E = mc^2 $$</code>. If you leave it inside a paragraph, it will produce an inline expression, just like \(E = mc^2\).</p>
 
-    
-    
-    
-    
+<p>To use display mode, again surround your expression with <code class="language-plaintext highlighter-rouge">$$</code> and place it as a separate paragraph. Here is an example:</p>
 
-    <li>
-      <h3><a class="post-title" href="/blog/2021/diffusiontips/">Don't be scared of diffusion NMR!</a>
-      </h3>
-      <p>Some basic tips for good NMR diffusion measurements</p>
-      <p class="post-meta"> 10 min read &nbsp; &middot; &nbsp;
-        December 19, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
+\[\sum_{k=1}^\infty |\langle x, e_k \rangle|^2 \leq \|x\|^2\]
 
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/NMR,">
-              <i class="fas fa-hashtag fa-sm"></i> NMR,</a> &nbsp;
-              
-            <a href="/blog/tag/diffusion,">
-              <i class="fas fa-hashtag fa-sm"></i> diffusion,</a> &nbsp;
-              
-            <a href="/blog/tag/chemistry">
-              <i class="fas fa-hashtag fa-sm"></i> chemistry</a> &nbsp;
-              
-          
+<p>You can also use <code class="language-plaintext highlighter-rouge">\begin{equation}...\end{equation}</code> instead of <code class="language-plaintext highlighter-rouge">$$</code> for display mode math.
+MathJax will automatically number equations:</p>
 
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/work">
-              <i class="fas fa-tag fa-sm"></i> work</a> &nbsp;
-              
-          
-    </p>
-    </li>
+<p>\begin{equation}
+\label{eq:caushy-shwarz}
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\end{equation}</p>
 
-    
+<p>and by adding <code class="language-plaintext highlighter-rouge">\label{...}</code> inside the equation environment, we can now refer to the equation using <code class="language-plaintext highlighter-rouge">\eqref</code>.</p>
 
-    
-    
-    
-    
+<p>Note that MathJax 3 is <a href="https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html" target="_blank" rel="noopener noreferrer">a major re-write of MathJax</a> that brought a significant improvement to the loading and rendering speed, which is now <a href="http://www.intmath.com/cg5/katex-mathjax-comparison.php" target="_blank" rel="noopener noreferrer">on par with KaTeX</a>.</p>
 
-    <li>
-      <h3><a class="post-title" href="/blog/2021/newwebsite/">Building a personal website</a>
-      </h3>
-      <p>If you can read this it's probably working</p>
-      <p class="post-meta"> 3 min read &nbsp; &middot; &nbsp;
-        December 17, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/computers,">
-              <i class="fas fa-hashtag fa-sm"></i> computers,</a> &nbsp;
-              
-            <a href="/blog/tag/web">
-              <i class="fas fa-hashtag fa-sm"></i> web</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/personal">
-              <i class="fas fa-tag fa-sm"></i> personal</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/albanianinsar/">Displacement mapping the 2019 Albanian earthquake with Sentinel-1 InSAR</a>
-      </h3>
-      <p>A short trip through some amateur SAR interferometry</p>
-      <p class="post-meta"> 11 min read &nbsp; &middot; &nbsp;
-        April 23, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/remote-sensing">
-              <i class="fas fa-hashtag fa-sm"></i> remote-sensing</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/geo4nonpro_4/">Geo4nonpro's lockdown geolocation challange - week 2, image 2</a>
-      </h3>
-      <p>An old photo, taken from a surprising location</p>
-      <p class="post-meta"> 4 min read &nbsp; &middot; &nbsp;
-        April 20, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/geolocation">
-              <i class="fas fa-hashtag fa-sm"></i> geolocation</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/geo4nonpro_3/">Geo4nonpro's lockdown geolocation challange - week 2, image 1</a>
-      </h3>
-      <p>A train that is not a train</p>
-      <p class="post-meta"> 8 min read &nbsp; &middot; &nbsp;
-        April 12, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/geolocation">
-              <i class="fas fa-hashtag fa-sm"></i> geolocation</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/geo4nonpro_2/">Geo4nonpro's lockdown geolocation challange - week 1, image 2</a>
-      </h3>
-      <p>Finding that mysterious explosion</p>
-      <p class="post-meta"> 6 min read &nbsp; &middot; &nbsp;
-        April 11, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/geolocation">
-              <i class="fas fa-hashtag fa-sm"></i> geolocation</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/geo4nonpro_1/">Geo4nonpro's lockdown geolocation challange - week 1, image 1</a>
-      </h3>
-      <p>Geolocating a space launch site</p>
-      <p class="post-meta"> 6 min read &nbsp; &middot; &nbsp;
-        April 11, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/geolocation">
-              <i class="fas fa-hashtag fa-sm"></i> geolocation</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-  </ul>
+  </article>
 
   
-
 
 </div>
 
@@ -561,7 +297,7 @@
 <footer class="fixed-bottom">
   <div class="container mt-0">
     <!--&copy; Copyright 2022 Thomas S. C. MacDonald. -->
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. <!-- Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>. -->
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. <!-- Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>. -->
 
     
     

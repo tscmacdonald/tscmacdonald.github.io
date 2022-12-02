@@ -12,7 +12,7 @@
   Thomas MacDonald
 
 
-  | Blog
+  | Building a personal website
 
 </title>
 <meta name="description" content="Thomas MacDonald's personal website. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://tscmacdonald.github.io/blog/">
+<link rel="canonical" href="https://tscmacdonald.github.io/blog/2021/newwebsite/">
 
 
 <!-- Dark Mode -->
@@ -84,8 +84,6 @@
             <a class="nav-link" href="/blog/">
               Blog
               
-              <span class="sr-only">(current)</span>
-              
             </a>
           </li>
           
@@ -93,8 +91,6 @@
 		  
 		  
           <!-- Other pages -->
-          
-          
           
           
           
@@ -236,320 +232,74 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
-
-  <div class="header-bar">
-    <h1>Blog</h1>
-    <h2>Short thoughts on miscellaneous topics</h2>
-  </div>
+      
 
 
-  <ul class="post-list">
-    
 
-    
-    
-    
-    
 
-    <li>
-      <h3><a class="post-title" href="/blog/2022/wallsofjerusalem/">Walls of Jerusalem - January 2022</a>
-      </h3>
-      <p>Walking in Tasmania's Walls of Jerusalem National Park</p>
-      <p class="post-meta"> 6 min read &nbsp; &middot; &nbsp;
-        January 10, 2022
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2022">
-          <i class="fas fa-calendar fa-sm"></i> 2022 </a>
 
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Building a personal website</h1>
+    <p class="post-meta">December 17, 2021</p>
+    <p class="post-tags">
+      <a href="/blog/2021"> <i class="fas fa-calendar fa-sm"></i> 2021 </a>
+      
+        ·  
+        
+        <a href="/blog/tag/computers,">
+          <i class="fas fa-hashtag fa-sm"></i> computers,</a>  
           
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/walking,">
-              <i class="fas fa-hashtag fa-sm"></i> walking,</a> &nbsp;
-              
-            <a href="/blog/tag/camping">
-              <i class="fas fa-hashtag fa-sm"></i> camping</a> &nbsp;
-              
+        <a href="/blog/tag/web">
+          <i class="fas fa-hashtag fa-sm"></i> web</a>  
           
+      
 
+      
+        ·  
+        
+        <a href="/blog/category/personal">
+          <i class="fas fa-tag fa-sm"></i> personal</a>  
           
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
+      
+
     </p>
-    </li>
+  </header>
 
-    
+  <article class="post-content">
+    <p>I’ve been thinking for a while that it would be good to start a personal website, both as a collection of thoughts in one place and as a personal portfolio. Finding the right solution took a little while and a few false starts. My first thought was Wordpress, either as a managed or self-hosted solution. I’d tried a few small managed blogs through wordpress.com before but had found it both limited and complicated to customise. Squarespace, another managed website solution, was unsatisying for similar reasons. Self-hosted Wordpress seemed like it could be a better option, but getting a site up and running had always proved more challenging than I’d expected and as a self-taught amateur server admin I was cautious about the security implications of running a publicly-exposed WP site from my home LAN.</p>
 
-    
-    
-    
-    
+<p>Finally, I found some discussion on Twitter about using <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages" target="_blank" rel="noopener noreferrer">GitHub Pages</a> for an easily-configurable personal website and was convinced almost immediately. Here are a few advantages of Pages, as I see them:</p>
 
-    <li>
-      <h3><a class="post-title" href="/blog/2021/diffusiontips/">Don't be scared of diffusion NMR!</a>
-      </h3>
-      <p>Some basic tips for good NMR diffusion measurements</p>
-      <p class="post-meta"> 10 min read &nbsp; &middot; &nbsp;
-        December 19, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
+<ul>
+  <li>Free hosting with minimal restrictions for a small (&lt;1 GB) site</li>
+  <li>Static site design built with <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">jekyll</a>: web pages are lightweight HTML, served quickly and efficiently.</li>
+  <li>All content (text and media) stored and edited as plain files in a legible directory structure making it easy to find, add, and edit content. Text content written as standard markdown.</li>
+  <li>Everything stored in a standard repository, making it fast and easy to transfer to a self-hosted site if needed.</li>
+</ul>
 
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/NMR,">
-              <i class="fas fa-hashtag fa-sm"></i> NMR,</a> &nbsp;
-              
-            <a href="/blog/tag/diffusion,">
-              <i class="fas fa-hashtag fa-sm"></i> diffusion,</a> &nbsp;
-              
-            <a href="/blog/tag/chemistry">
-              <i class="fas fa-hashtag fa-sm"></i> chemistry</a> &nbsp;
-              
-          
+<p>All in all, it’s a great solution if you’re someone that’s computer-literate enough to write markdown and occasionally tinker with HTML, but not enough of a web developer to write your own CSS or <a href="https://en.wikipedia.org/wiki/Log4Shell" target="_blank" rel="noopener noreferrer">keep your Apache updated</a>. To make things even easier, there are plenty of themes available on GitHub to fork and use as a starting point. I only considered a handful but ended up settling on <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> as a minimal theme with built-in support for blogging, projects, and an academic bibliography.</p>
 
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/work">
-              <i class="fas fa-tag fa-sm"></i> work</a> &nbsp;
-              
-          
-    </p>
-    </li>
+<p>So far, I’m happy with this setup. Building from plaintext files gives me the freedom to write and edit the way I want to, and it’s nice to have a little more exposure to jekyll and git. If you like the look of this site, you’re more than welcome to fork the <a href="https://github.com/tscmacdonald/tscmacdonald.github.io/" target="_blank" rel="noopener noreferrer">underlying repository</a> and use it as a base for your own work - feel free to get in touch if you need a hand getting things working from that point, and I’ll see what I can do to help.</p>
 
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2021/newwebsite/">Building a personal website</a>
-      </h3>
-      <p>If you can read this it's probably working</p>
-      <p class="post-meta"> 3 min read &nbsp; &middot; &nbsp;
-        December 17, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/computers,">
-              <i class="fas fa-hashtag fa-sm"></i> computers,</a> &nbsp;
-              
-            <a href="/blog/tag/web">
-              <i class="fas fa-hashtag fa-sm"></i> web</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/personal">
-              <i class="fas fa-tag fa-sm"></i> personal</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/albanianinsar/">Displacement mapping the 2019 Albanian earthquake with Sentinel-1 InSAR</a>
-      </h3>
-      <p>A short trip through some amateur SAR interferometry</p>
-      <p class="post-meta"> 11 min read &nbsp; &middot; &nbsp;
-        April 23, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/remote-sensing">
-              <i class="fas fa-hashtag fa-sm"></i> remote-sensing</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/geo4nonpro_4/">Geo4nonpro's lockdown geolocation challange - week 2, image 2</a>
-      </h3>
-      <p>An old photo, taken from a surprising location</p>
-      <p class="post-meta"> 4 min read &nbsp; &middot; &nbsp;
-        April 20, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/geolocation">
-              <i class="fas fa-hashtag fa-sm"></i> geolocation</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/geo4nonpro_3/">Geo4nonpro's lockdown geolocation challange - week 2, image 1</a>
-      </h3>
-      <p>A train that is not a train</p>
-      <p class="post-meta"> 8 min read &nbsp; &middot; &nbsp;
-        April 12, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/geolocation">
-              <i class="fas fa-hashtag fa-sm"></i> geolocation</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/geo4nonpro_2/">Geo4nonpro's lockdown geolocation challange - week 1, image 2</a>
-      </h3>
-      <p>Finding that mysterious explosion</p>
-      <p class="post-meta"> 6 min read &nbsp; &middot; &nbsp;
-        April 11, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/geolocation">
-              <i class="fas fa-hashtag fa-sm"></i> geolocation</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3><a class="post-title" href="/blog/2020/geo4nonpro_1/">Geo4nonpro's lockdown geolocation challange - week 1, image 1</a>
-      </h3>
-      <p>Geolocating a space launch site</p>
-      <p class="post-meta"> 6 min read &nbsp; &middot; &nbsp;
-        April 11, 2020
-      </p>
-      <p class="post-tags">
-        <a href="/blog/2020">
-          <i class="fas fa-calendar fa-sm"></i> 2020 </a>
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/tag/geolocation">
-              <i class="fas fa-hashtag fa-sm"></i> geolocation</a> &nbsp;
-              
-          
-
-          
-          &nbsp; &middot; &nbsp;
-            
-            <a href="/blog/category/hobbies">
-              <i class="fas fa-tag fa-sm"></i> hobbies</a> &nbsp;
-              
-          
-    </p>
-    </li>
-
-    
-  </ul>
+  </article>
 
   
-
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname  = 'tscmacdonald';
+      var disqus_identifier = '/blog/2021/newwebsite';
+      var disqus_title      = "Building a personal website";
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" target="_blank" rel="noopener noreferrer">comments powered by Disqus.</a>
+</noscript>
+  
 
 </div>
 
@@ -561,7 +311,7 @@
 <footer class="fixed-bottom">
   <div class="container mt-0">
     <!--&copy; Copyright 2022 Thomas S. C. MacDonald. -->
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. <!-- Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>. -->
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. <!-- Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>. -->
 
     
     
