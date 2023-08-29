@@ -33,6 +33,15 @@
   - firstname: ["R. Dean", "R. D."]
     url: https://physics.umaine.edu/people/r-dean-astumian/
 
+
+"McCamey":
+  - firstname: ["D. R.", "Dane R."]
+    url: https://research.unsw.edu.au/people/professor-dane-mccamey
+    
+"Tayebjee":
+  - firstname: ["M. J. Y.", "Murad J. Y."]
+    url: https://research.unsw.edu.au/people/dr-murad-tayebjee
+
 "Wezenberg":
   - firstname: ["S. J.", "Sander J."]
     url: http://sanderwezenberg.com/

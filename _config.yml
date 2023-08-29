@@ -215,8 +215,15 @@ defaults:
     values:
       sitemap:         false
 
-# Extras
-#github: [metadata]
+
+# -----------------------------------------------------------------------------
+# Jekyll Minifier
+# -----------------------------------------------------------------------------
+
+jekyll-minifier:
+  exclude: ['robots.txt']
+  uglifier_args:
+    harmony: true
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives
