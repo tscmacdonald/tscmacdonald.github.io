@@ -10,7 +10,7 @@ profile:
   
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 I'm a Senior Consultant working on energy markets at Aurecon in the [Sustainability and Climate Change](https://www.aurecongroup.com/expertise/sustainability-climate-change) division. My work involves understanding and modelling the techno-economic aspects of the ongoing energy transition in Australia, specifically the [NEM](https://en.wikipedia.org/wiki/National_Electricity_Market). Some of the topics I've worked on recently include:
