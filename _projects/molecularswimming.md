@@ -14,7 +14,7 @@ The start of my PhD focused on the possibility of 'molecular swimmers': the abil
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/molecularmotion/swimmers.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/molecularmotion/swimmers.svg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -27,7 +27,7 @@ What might a non-reciprocal molecular swimmer look like? It would necessarily be
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/molecularmotion/dyadswimmer.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/molecularmotion/dyadswimmer.svg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -76,7 +76,7 @@ As above, Purcell's scallop theorem says that reciprocal motion can't be used to
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/molecularmotion/reciprocaltumbling.svg class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/molecularmotion/reciprocaltumbling.svg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">

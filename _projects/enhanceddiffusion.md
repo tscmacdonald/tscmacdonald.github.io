@@ -19,7 +19,7 @@ The question of enhanced diffusion eventually became a major focus of my PhD, le
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/enhanceddiffusion/windowprocessing.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/enhanceddiffusion/windowprocessing.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -30,7 +30,7 @@ I realised fairly quickly during this project that random gradient sequences (as
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/enhanceddiffusion/gcorrelation.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/enhanceddiffusion/gcorrelation.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">

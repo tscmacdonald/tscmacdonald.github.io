@@ -53,7 +53,7 @@ Pulsed-gradient diffusion NMR measurements involve:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/diffusionnmr/pgste.png class: "img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/diffusionnmr/pgste.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -76,7 +76,7 @@ Convection is probably the most persistent problem affecting diffusion NMR measu
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/diffusionnmr/convection.png class: "img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/diffusionnmr/convection.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -106,7 +106,7 @@ Diffusion coefficients are obtained by fitting NMR peak intensities to the Stejs
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/diffusionnmr/peakoverlap.png class: "img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/diffusionnmr/peakoverlap.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

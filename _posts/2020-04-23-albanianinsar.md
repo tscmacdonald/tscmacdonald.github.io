@@ -16,7 +16,7 @@ This earthquake hit Albania near the town of Durres, so to start off I chose two
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/1.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/albanianinsar/1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -27,7 +27,7 @@ After downloading the two SLC products, I imported both into into ESA’s SNAP t
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/2.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/albanianinsar/2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -38,7 +38,7 @@ I then applied orbit corrections to each each product (_Radar > Apply Orbit File
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/3.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/albanianinsar/3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -49,7 +49,7 @@ The next steps are to stitch the different bursts together into a composite (“
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/4.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/albanianinsar/4.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -60,7 +60,7 @@ Unwrapping attempts to convert periodic phase measurements into absolute displac
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/5.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/albanianinsar/5.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -73,7 +73,7 @@ Once the unwrapping has finished, the unwrapped data can be imported into SNAP (
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/6.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/albanianinsar/6.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -84,7 +84,7 @@ Finally, we can run a range-doppler correction on the displacement map (_Radar >
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/7.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/albanianinsar/7.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -95,7 +95,7 @@ I don’t have much other information regarding this earthquake to compare this 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/8.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/albanianinsar/8.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -106,7 +106,7 @@ It seems that this guess is actually pretty close to the truth. An article publi
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/albanianinsar/9.png class: "img-fluid rounded z-depth-1" zoomable: true %}
+        {% include figure.html path="assets/img/albanianinsar/9.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
